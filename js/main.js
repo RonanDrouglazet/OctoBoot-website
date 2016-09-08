@@ -98,6 +98,17 @@ function main() {
         } else {
             $($(".why-us").get(i)).remove()
         }
+
+        var ch = $(el).parent().children()
+        var row = Math.ceil(ch / 12)
+        var sp = ((12 * row) - ((duplicate ? ch.length : ch.length - 1) * 4)) / row
+
+        for(var t=0; t<=row;t++) {
+            $(ch[t * 3]).removeClass(function(index, classs) {
+                var match = classs.match(/col-md-offset-\d+/)
+                return match ? match[0] : null
+            }).addClass('col-md-offset-' + sp)
+        }
     }
 
 }());
