@@ -1349,16 +1349,17 @@ Obtenir votre accès à l'outil</p>
           var isocontext = isometric(context);
           isocontext.scale3d(30, 30, 30);
           var num = Math.ceil((window.innerWidth * 10) / 960)
-          
+          var delay = Math.ceil((window.innerWidth * 3.3) / 960)
+
           d3_timer.timer(function(elapsed) {
             context.save();
             context.clearRect(0, 0, width, height);
             context.fillStyle = "#000";
             context.translate(width / 2, height * 0.6);
-            for (var x = num, d, t = (elapsed / 10500) % 1; x >= -num; --x) {
+            for (var x = num, d, t = (elapsed / 5000) % 1; x >= -num; --x) {
               for (var y = num; y >= -num; --y) {
                 if ((d = distanceManhattan(x, y)) > num) continue;
-                var te = d3_ease.easeCubic(Math.max(0, Math.min(1, t * 3.3 - distanceCartesian(x, y) / 4)));
+                var te = d3_ease.easeCubic(Math.max(0, Math.min(1, t * delay - distanceCartesian(x, y) / 4)));
                 drawCube((d & 1 ? -1 : +1) * (Math.PI / 4 - te * Math.PI / 2), x * 2, y * 2, 2 * te);
               }
             }
@@ -1375,6 +1376,7 @@ Obtenir votre accès à l'outil</p>
 
           function drawCube(angle, x, y, z) {
             if ((angle %= Math.PI / 2) < 0) angle += Math.PI / 2;
+
             isocontext.save();
             isocontext.translate3d(x, y, z);
             isocontext.rotateZ(angle - Math.PI / 4);
