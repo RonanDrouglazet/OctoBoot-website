@@ -476,7 +476,7 @@ a.fa.fa-angle-down:hover{
 /*******************************************
  ******** 09 Why Choose Us Section *********
  ******************************************/
-#why-us {
+.why-us {
 	padding: 40px 0;
 	background-color: #fbfbfb;
 }
