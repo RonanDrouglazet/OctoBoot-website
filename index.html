@@ -8,7 +8,7 @@
     <meta name="description" content="Zarius is a responsive multipurpose one page template built based on bootstrap framework. This template is designed to help promote your business and work." />
     <meta name="keywords" content="bootstrap theme, onepage, multipurpose, portfolio template, agency, mobile responsive, bootstrap theme" />
     <meta name="author" content="ZRS" />
-    
+
     <!-- ========= Bootstrap/Slider/Stylesheet ==========
 	================================================= -->
     <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.css" />
@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,400italic,300italic,700,700italic,900,900italic" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" type="text/css" />
-	
+
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -35,14 +35,14 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  
+
   <body>
 
   <!-- ============ Navigation ================
     ==========================================-->
-    
-	
-	<nav id="menu" class="navbar navbar-default navbar-fixed-top on">
+
+
+	<nav id="menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle -->
         <div class="navbar-header"><button class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">OCTOBOOT</a></div>
@@ -62,15 +62,18 @@
         </div>
       </div>
     </nav>
-    
-	
+
+
     <!-- =============== Header ===================
     =========================================== -->
 
-	<header id="home" class="text-center">
+	<header id="home" class="text-center relativect">
+        <div class="homeanim">
+            <canvas height="750"></canvas>
+        </div>
         <div class="overlay">
 		    <div class="container">
-         		<div class="row">	
+         		<div class="row">
                     <div class="content">
                         <h1><strong><span class="color animated infinite fadeInUp">OCTOBOOT</span></strong></h1>
 						<h2>l'outil de gestion de contenus des sites internet<br />
@@ -78,15 +81,15 @@ qui s'adapte/dédié aux besoins des professionnelS</h2>
 			            <a href="#text-intro" class="fa fa-angle-down data-scroll faa-pulse animated"></a>
                     </div>
                 </div>
-			</div>	
+			</div>
         </div>
     </header>
-	
+
 
     <!--  ======== Short Intro Text Section ==========
     ============================================== -->
-    
-	<div id="text-intro">
+
+	<div id="text-intro" class="relativect">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 wow fadeIn animated animated animated animated animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeIn;">
@@ -94,40 +97,41 @@ qui s'adapte/dédié aux besoins des professionnelS</h2>
                         <h1>découvrez OCTOBOOT</h1>
 					    <div class="line">
                             <hr />
-						</div>	
+						</div>
                         <div class="clearfix"></div>
 					</div>
 					<div class="intro-text text-center">
 					    <h3>Octoboot est la plateforme en ligne de gestion de contenus des sites internet des professionnels.<br />
 <br />
 Que vous soyez indépendants, entrepreneurs, commerçants, blogueurs,.. vous n'avez que 2 bras et un planning chargé, Octoboot vous offre ces 8 bras pour vous aider. L'outil vous permet une totale autonomie pour faire évoluer votre site en fonction de votre activité.</h3>
-                    </div>	
+                    </div>
                 </div>
             </div>
         </div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 team-photo">
-					
+
 				</div>
 			</div>
 		</div>
     </div>
-    
-	
+
+
 	<!--  ======== Call To Action Section =========
     =========================================== -->
-    
-	<div id="call-action">
+
+	<div id="call-action" class="relativect">
 	    <div class="overlay">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 wow fadeIn animated animated animated animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeIn;">
 				        <div class="action-text">
                             <h2>découvrir En détail les fonctionnalités d'octoboot</h2>
-				        </div>	
+				        </div>
 					</div>
-                    <div class="col-md-2 wow fadeInRight animated animated animated animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInRight;">					
+                    <div class="col-md-2 wow fadeInRight animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInRight;">
+
 				        <div class="action-button">
 				            <a href="#contact" class="btn btn-custom btn-light pull-left">Hire Us</a>
                         </div>
@@ -135,9 +139,10 @@ Que vous soyez indépendants, entrepreneurs, commerçants, blogueurs,.. vous n'a
                 </div>
             </div>
 		</div>
-    </div>	<!-- ===== Main Company Mission Section ======
-    ===========================================-->	
-    <div id="mission-about"><div class="section-title text-center"><h1>VOS BESOINS</h1>
+    </div>
+    <!-- ===== Main Company Mission Section ======-->
+
+    <div id="mission-about" class="relativect"><div class="section-title text-center"><h1>VOS BESOINS</h1>
 
 <div class="line">
 <hr /></div>
@@ -173,19 +178,19 @@ VOIR LES DIFFERENTES OFFRES</p>
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
             </div>
         </div>
-	</div>	
-	
+	</div>
+
 	<!-- ======== Why Choose Us Section ==========
     ========================================== -->
-	
-	<div id="why-us" class="why-text">
+
+	<div id="why-us" class="why-text relativect">
 		<div class="container-fluid">
 			<div class="row">
-				
+
 				<div class="col-sm-6 col-md-6 nopadding">
 					<div class="features-img">
 						<img class="img-responsive" src="img/photo.png" alt="" />
@@ -204,31 +209,31 @@ VOIR LES DIFFERENTES OFFRES</p>
                                 <div class="featured-box one">
                 	                <div class="box-1">
                     	                <i class="fa fa-star-o faa-tada animated-hover"></i>
-                                    </div>	
+                                    </div>
                 	                <div class="box-2">
-                                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>                                
-									</div>    
+                                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+									</div>
                                 </div>
                                 <div class="featured-box two">
                 	                <div class="box-1">
                     	                <i class="fa fa-star-o faa-tada animated-hover"></i>
-                                    </div>	
+                                    </div>
                 	                <div class="box-2">
                                         <p>Purus consequat sem cure digni ssim. Donec entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                                    </div>    
+                                    </div>
                                 </div>
                                 <div class="featured-box three">
                 	                <div class="box-1">
                     	                <i class="fa fa-star-o faa-tada animated-hover"></i>
-                                    </div>	
+                                    </div>
                 	                <div class="box-2">
                                         <p>Iaculis purus consequat sem cure digni ssim. Suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                                    </div>    
+                                    </div>
                                 </div>
 					        </div>
 				            <div class="actn-btn">
 				                <a href="#" class="btn btn-custom">Hire Us</a>
-				            </div> 
+				            </div>
                         </div>
 						<div id="webuild" class="tab-pane fade">
 						    <div class="text-about">
@@ -239,7 +244,7 @@ VOIR LES DIFFERENTES OFFRES</p>
 							</div>
 				            <div class="actn-btn">
 				                <a href="#works" class="btn btn-custom">View more</a>
-				            </div> 
+				            </div>
                         </div>
 						<div id="wetake" class="tab-pane fade active in">
 						    <div class="text-about">
@@ -249,16 +254,16 @@ VOIR LES DIFFERENTES OFFRES</p>
 							</div>
 				            <div class="actn-btn">
 				                <a href="#" class="btn btn-custom">Hire Us</a>
-				            </div> 
+				            </div>
                         </div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div><div id="why-us" class="why-text">
+	</div><div id="why-us" class="why-text relativect">
 		<div class="container-fluid">
 			<div class="row">
-				
+
 				<div class="col-sm-6 col-md-6 nopadding">
 					<div class="features-img">
 						<img class="img-responsive" src="img/photo.png" alt="" />
@@ -277,31 +282,31 @@ VOIR LES DIFFERENTES OFFRES</p>
                                 <div class="featured-box one">
                 	                <div class="box-1">
                     	                <i class="fa fa-star-o faa-tada animated-hover"></i>
-                                    </div>	
+                                    </div>
                 	                <div class="box-2">
-                                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>                                
-									</div>    
+                                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus.</p>
+									</div>
                                 </div>
                                 <div class="featured-box two">
                 	                <div class="box-1">
                     	                <i class="fa fa-star-o faa-tada animated-hover"></i>
-                                    </div>	
+                                    </div>
                 	                <div class="box-2">
                                         <p>Purus consequat sem cure digni ssim. Donec entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                                    </div>    
+                                    </div>
                                 </div>
                                 <div class="featured-box three">
                 	                <div class="box-1">
                     	                <i class="fa fa-star-o faa-tada animated-hover"></i>
-                                    </div>	
+                                    </div>
                 	                <div class="box-2">
                                         <p>Iaculis purus consequat sem cure digni ssim. Suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                                    </div>    
+                                    </div>
                                 </div>
 					        </div>
 				            <div class="actn-btn">
 				                <a href="#" class="btn btn-custom">Hire Us</a>
-				            </div> 
+				            </div>
                         </div>
 						<div id="webuild" class="tab-pane fade">
 						    <div class="text-about">
@@ -312,7 +317,7 @@ VOIR LES DIFFERENTES OFFRES</p>
 							</div>
 				            <div class="actn-btn">
 				                <a href="#works" class="btn btn-custom">View more</a>
-				            </div> 
+				            </div>
                         </div>
 						<div id="wetake" class="tab-pane fade">
 						    <div class="text-about">
@@ -322,19 +327,19 @@ VOIR LES DIFFERENTES OFFRES</p>
 							</div>
 				            <div class="actn-btn">
 				                <a href="#" class="btn btn-custom">Hire Us</a>
-				            </div> 
+				            </div>
                         </div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 	<!-- ========== Top News Section ===========
     ==========================================-->
-	
-	<div id="top-news">
+
+	<div id="top-news" class="relativect">
 	    <div class="overlay">
             <div class="container">
 		        <div class="row">
@@ -343,36 +348,36 @@ VOIR LES DIFFERENTES OFFRES</p>
                             <div class="col-md-10 col-md-offset-1">
                                 <div class="section-text text-center">
 					               <h3><strong class="color">BESOIN D'UN CONSEIL</strong> - Nous sommes là pour vous accompagner et répondre au plus juste à vos besoin .adapter l'outil à vos besoins Sed eu libero nibh. Aliquam accumsan diam ac nulla suscipit mattis. <em><a class="arrow-link" href="#">Contactez-nous</a></em></h3>
-                                </div>	
+                                </div>
                             </div>
 					    </div></div><div class="owl-item" style="width: 1170px;"><div class="item">
                             <div class="col-md-10 col-md-offset-1">
                                 <div class="section-text text-center">
 					               <h3><strong class="color">SOCIAL IMPACT</strong> -  Aliquam accumsan diam ac nulla suscipit mattis. Phasellus id interdum neque. Phasellus nec pulvinar purus, vitae elementum velit. Etiam convallis, erat ac mattis ullamcorper, eros sem vehicula sem, non tempor erat sapien in ligula.
 						           <a href="#" class="arrow-link"><em>Read More</em><i class="fa fa-long-arrow-right"></i></a></h3>
-                                </div>	
+                                </div>
                             </div>
 					    </div></div><div class="owl-item" style="width: 1170px;"><div class="item">
                             <div class="col-md-10 col-md-offset-1">
                                 <div class="section-text text-center">
 					               <h3><strong class="color">NEW CAMPAIN</strong> -  Integer felis mauris, efficitur id lectus et, feugiat pulvinar ipsum. Mauris a tellus dui. Donec mi sapien, sagittis nec sagittis et, ullamcorper at diam. Fusce tempus justo luctus, scelerisque mauris nec, consequat leo, sit amet felis scelerisque iaculis.
 						           <a href="#" class="arrow-link"><em>Read More</em><i class="fa fa-long-arrow-right"></i></a></h3>
-                                </div>	
+                                </div>
                             </div>
 					    </div></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 1170px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span></span></div><div class="owl-page active"><span></span></div><div class="owl-page"><span class=""></span></div></div></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 1170px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 1170px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 1170px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 1170px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div>
-						
-						
+
+
 					<div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div>
 				</div>
             </div>
         </div>
 	</div>
 
-	
+
     <!-- =========== Services Section ============
     ========================================== -->
-    
-	<div id="price">
+
+	<div id="price"  class="relativect">
 	    <div class="overlay">
 	        <div class="container">
 	            <div class="row">
@@ -390,12 +395,12 @@ Octoboot vous accompagne au plus près de votre activité /répond à vos besoin
 <br />
 <br />
 Obtenir votre accès à l'outil</p>
-                            
+
 						</div>
-			        </div>	
+			        </div>
                     <div class="col-sm-6 wow fadeInRight animated animated" data-wow-duration="1000ms" data-wow-delay="400ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 400ms; animation-name: fadeInRight;">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            
+
                             <div class="panel panel-new-style">
                                 <div class="panel-heading" role="tab"><h2><a aria-controls="collapseTwo" aria-expanded="false" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo" class="collapsed"><i class="fa fa-folder-o"></i> PACK SAISONNIER/ponctuel</a></h2>
 
@@ -415,8 +420,8 @@ Obtenir votre accès à l'outil</p>
 
 <p>Site responsive i.e un site qui s'adapte au support sur lequel est l'internaute: mobile, tablette, ordinateur</p>
 </div>
-                                        
-                                        
+
+
                                         <div class="clearfix price"><div class="pull-left"><strong>Total Price</strong></div><span class="pull-right">9,00€/ mois</span></div>
 										<div class="clearfix price"><div class="pull-right"><a href="#"><strong>BUY PLAN</strong></a></div></div>
                                     </div>
@@ -443,8 +448,8 @@ Obtenir votre accès à l'outil</p>
 
 <p>Site responsive i.e un site qui s'adapte au support sur lequel est l'internaute: mobile, tablette, ordinateur</p>
 </div>
-                                        
-                                        
+
+
                                         <div class="clearfix price"><div class="pull-left"><strong>Total Price</strong></div><span class="pull-right">105,00€/ an</span></div>
 										<div class="clearfix price"><div class="pull-right"><a href="#"><strong>PAYABLE MENSUELLEMENT OU ANNUELLEMENT</strong></a></div></div>
                                     </div></div>
@@ -458,7 +463,7 @@ Obtenir votre accès à l'outil</p>
                                     </div>
                                 </div>
                             </div><div class="panel panel-new-style">
-                                
+
                                 <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-expanded="false" style="height: 0px;">
                                     <div class="panel-body">
                                         <div class="clearfix price"><div class="pull-left">Service One</div><span class="pull-right">$ 10.00</span></div>
@@ -472,22 +477,22 @@ Obtenir votre accès à l'outil</p>
                         </div>
                     </div>
                 </div>
-	        </div>	
+	        </div>
         </div>
-    </div><div id="about-services">
+    </div><div id="about-services" class="relativect">
         <div class="container">
 		    <div class="row">
                 <div class="section-title text-center wow fadeIn animated animated animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeIn;">
 			        <h1>Services we can offer to you</h1>
-    			    <div class="line">				
+    			    <div class="line">
                        <hr />
                     </div>
                     <div class="clearfix"></div>
 			    </div>
             </div>
-		</div>	
+		</div>
         <div class="space"></div>
-		
+
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 service-box wow fadeInDown animated animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeInDown;">
@@ -546,11 +551,11 @@ Obtenir votre accès à l'outil</p>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 
     <!-- ======= Feature Counter Section ==========
     =========================================== -->
-	<div id="about-features" class="text-center">
+	<div id="about-features" class="text-center relativect">
 	    <div class="overlay">
             <div class="container">
                 <div class="row count">
@@ -561,35 +566,35 @@ Obtenir votre accès à l'outil</p>
                     </div>
                     <div class="col-sm-3 counter-content wow fadeIn animated animated" data-wow-duration="1000ms" data-wow-delay="700ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 700ms; animation-name: fadeIn;">
                         <i class="fa fa-desktop"></i>
-                        <div><span class="timer" data-from="0" data-to="200" data-speed="25000" data-refresh-interval="50">200</span></div>                  
+                        <div><span class="timer" data-from="0" data-to="200" data-speed="25000" data-refresh-interval="50">200</span></div>
                         <h2>Developed Projects</h2>
-                    </div> 
+                    </div>
 			        <div class="col-sm-3 counter-content wow fadeIn animated animated" data-wow-duration="1000ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 900ms; animation-name: fadeIn;">
                         <i class="fa fa-thumb-tack"></i>
-                        <div><span class="timer" data-from="0" data-to="6" data-speed="25000" data-refresh-interval="50">6</span></div>                 
+                        <div><span class="timer" data-from="0" data-to="6" data-speed="25000" data-refresh-interval="50">6</span></div>
                         <h2>Social Actions</h2>
-                    </div> 
+                    </div>
 			        <div class="col-sm-3 counter-content wow fadeIn animated animated" data-wow-duration="1000ms" data-wow-delay="1100ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 1100ms; animation-name: fadeIn;">
-                        <i class="fa fa-comment-o"></i>                    
+                        <i class="fa fa-comment-o"></i>
                         <div><span class="timer" data-from="0" data-to="52" data-speed="25000" data-refresh-interval="50">52</span></div>
                         <h2>Question Answered</h2>
-                    </div>                 
+                    </div>
                 </div>
                 <div class="clearfix"></div>
-		    </div>	
-		</div>	
-	</div> 
+		    </div>
+		</div>
+	</div>
 
 	<!-- ========== About Team Section ============
     ============================================-->
-    <div id="team-about"> 
+    <div id="team-about" class="relativect">
         <div class="container">
             <div class="row">
                 <div class="section-title text-center wow fadeIn animated animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeIn;">
                     <h1>Our Winning Team</h1>
 			        <div class="line">
                       <hr />
-			        </div>	
+			        </div>
                     <div class="clearfix"></div>
 			    </div>
             </div>
@@ -678,28 +683,28 @@ Obtenir votre accès à l'outil</p>
 					    </div>
 				    </div>
                 </div>
-            </div>   
-	    </div>	
+            </div>
+	    </div>
     </div>
-	
+
 	<!-- ========= Portfolio Section ===========
     ===========================================-->
-    <div id="works">
+    <div id="works" class="relativect">
         <div class="container">
 	         <div class="row">
 				<div class="col-md-12 wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
 				    <div class="quote-text">
                         <h2><span class="color-text">Crafted with passion, made with love, brought by Zarius </span></h2>
-				    </div>	
+				    </div>
 			    </div>
 		    </div>
         </div>
     </div>
 
-	
+
     <!-- ========= Portfolio Section ============
     ===========================================-->
-    <div id="portfolio">
+    <div id="portfolio" class="relativect">
 		<div class="showcase">
             <div class="container-fluid">
                 <div class="row no-gutter">
@@ -788,7 +793,7 @@ Obtenir votre accès à l'outil</p>
 
     <!-- ======== Testimonials Section ==========
     ==========================================-->
-    <div id="testimonials">
+    <div id="testimonials" class="relativect">
         <div class="container">
             <div class="row">
 			    <div class="section-title text-center wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
@@ -798,56 +803,56 @@ Obtenir votre accès à l'outil</p>
                     </div>
                 </div>
 			</div>
-		</div>	
+		</div>
 		<div class="container">
             <div class="row testimonials owl-carousel owl-theme" style="opacity: 1; display: block;">
                 <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 52440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-1140px, 0px, 0px);"><div class="owl-item" style="width: 1140px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 52440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-1140px, 0px, 0px);"><div class="owl-item" style="width: 1140px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 52440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-1140px, 0px, 0px);"><div class="owl-item" style="width: 1140px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 52440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-1140px, 0px, 0px);"><div class="owl-item" style="width: 1140px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 52440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-1140px, 0px, 0px);"><div class="owl-item" style="width: 1140px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 52440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-1140px, 0px, 0px);"><div class="owl-item" style="width: 1140px;"><div class="col-md-8 col-md-offset-2">
                     <div id="testimonial" class="testimonials owl-carousel owl-theme" style="opacity: 1; display: block;">
-					    <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="item client-box">   
+					    <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 20440px; left: 0px; display: block; transition: all 400ms ease; transform: translate3d(-730px, 0px, 0px);"><div class="owl-item" style="width: 730px;"><div class="item client-box">
                             <div class="client-image col-xs-2">
 								<img alt="portfolio" src="img/team/2.jpg" width="100" class="img-circle img-responsive" />
 							</div>
                             <div class="client-text col-xs-10">
-                                <p>Maecenas scelerisque, eros nec consectetur molestie, metus dolor dapibus augue, sed fringilla dolor lacus sed ante. Aenean et lectus orci. Praesent eu ornare neque, nec luctus neque. Sed malesuada ligula quis est pharetra, sed sollicitudin sapien venenatisess.</p>      
+                                <p>Maecenas scelerisque, eros nec consectetur molestie, metus dolor dapibus augue, sed fringilla dolor lacus sed ante. Aenean et lectus orci. Praesent eu ornare neque, nec luctus neque. Sed malesuada ligula quis est pharetra, sed sollicitudin sapien venenatisess.</p>
                                 <span class="client-name"><strong>Pauline Heart</strong> - <em>Social ATR</em></span>
                             </div>
-				        </div></div><div class="owl-item" style="width: 730px;"><div class="item client-box">   
+				        </div></div><div class="owl-item" style="width: 730px;"><div class="item client-box">
                             <div class="client-image col-xs-2">
 								<img alt="portfolio" src="img/team/4.jpg" width="100" class="img-circle img-responsive" />
 							</div>
                             <div class="client-text col-xs-10">
-                                <p>Maecenas convallis semper leo consectetur viverra. Curabitur porta convallis eros, at dictum lacus. Duis in ante sed nisl scelerisque vehicula. Cras faucibus leo at neque consectetur, fringilla facilisis odio gravida.</p>      
+                                <p>Maecenas convallis semper leo consectetur viverra. Curabitur porta convallis eros, at dictum lacus. Duis in ante sed nisl scelerisque vehicula. Cras faucibus leo at neque consectetur, fringilla facilisis odio gravida.</p>
                                 <span class="client-name"><strong>Angela Burr</strong> - <em>Trust Bank</em></span>
                             </div>
-				        </div></div><div class="owl-item" style="width: 730px;"><div class="item client-box">   
+				        </div></div><div class="owl-item" style="width: 730px;"><div class="item client-box">
                             <div class="client-image col-xs-2">
 								<img alt="portfolio" src="img/team/1.jpg" width="100" class="img-circle img-responsive" />
 							</div>
                             <div class="client-text col-xs-10">
-                                <p>Suspendisse sagittis libero sit amet quam convallis, sed tempor augue pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vitae libero posuere felis pretium imperdiet consectetur ut nulla. Phasellus efficitur odio semper.</p>      
+                                <p>Suspendisse sagittis libero sit amet quam convallis, sed tempor augue pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vitae libero posuere felis pretium imperdiet consectetur ut nulla. Phasellus efficitur odio semper.</p>
                                 <span class="client-name"><strong>Jimm Angelo</strong> - <em>FDS Foundation</em></span>
                             </div>
-				        </div></div><div class="owl-item" style="width: 730px;"><div class="item-test client-box">   
+				        </div></div><div class="owl-item" style="width: 730px;"><div class="item-test client-box">
                             <div class="client-image col-xs-2">
 								<img alt="portfolio" src="img/team/3.jpg" width="100" class="img-circle img-responsive" />
 							</div>
                             <div class="client-text col-xs-10">
-                                <p>Curabitur faucibus, magna sed mattis dapibus, est urna pretium mauris, in bibendum quam erat ac purus. Maecenas convallis semper leo consectetur viverra. Curabitur porta convallis eros, at dictum lacus. Duis in ante sed nisl scelerisque vehicula.</p>      
+                                <p>Curabitur faucibus, magna sed mattis dapibus, est urna pretium mauris, in bibendum quam erat ac purus. Maecenas convallis semper leo consectetur viverra. Curabitur porta convallis eros, at dictum lacus. Duis in ante sed nisl scelerisque vehicula.</p>
                                 <span class="client-name"><strong>Tom Gold</strong> - <em>Market Five</em></span>
                             </div>
 				        </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 730px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 730px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 730px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 730px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 730px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div>
-						
-						
-						
-					<div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div>	
+
+
+
+					<div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div>
                 </div></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 1140px;"><div class="owl-controls" style="display: none;"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div></div></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 1140px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 1140px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 1140px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div></div></div><div class="owl-item" style="width: 1140px;"><div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div></div></div>
             <div class="owl-controls"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div>
         </div>
 	</div>
-	
+
 	<!-- ============ Price Section =============
     ==========================================-->
-	<div id="price">
+	<div id="price" class="relativect">
 	    <div class="overlay">
 	        <div class="container">
 	            <div class="row">
@@ -862,7 +867,7 @@ Obtenir votre accès à l'outil</p>
                             <p>Donec pharetra turpis at tempus auctor. Morbi consectetur, quam rutrum rhoncus suscipit, mauris ligula vulputate ante, eget auctor quam felis at turpis. In rhoncus non nibh id pellentesque. Sed eu libero nibh. Aliquam accumsan diam ac nulla suscipit mattis. Phasellus id interdum neque</p>
                             <p>Sellus nec pulvinar purus, vitae elementum velit. Integer felis mauris, efficitur id lectus et, feugiat pulvinar ipsum. Mauris a tellus.</p>
 						</div>
-			        </div>	
+			        </div>
                     <div class="col-sm-6 wow fadeInRight animated animated" data-wow-duration="1000ms" data-wow-delay="400ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 400ms; animation-name: none;">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-new-style">
@@ -916,13 +921,13 @@ Obtenir votre accès à l'outil</p>
                         </div>
                     </div>
                 </div>
-	        </div>	
+	        </div>
         </div>
     </div>
-	
+
 	<!-- ========== Top Clients Section ===========
     =========================================== -->
-    <div id="top-clients">
+    <div id="top-clients" class="relativect">
         <div class="container">
 		    <div class="row">
                 <div id="clients" class="clients owl-carousel owl-theme" style="opacity: 1; display: block;">
@@ -941,21 +946,15 @@ Obtenir votre accès à l'outil</p>
                     </div></div><div class="owl-item" style="width: 234px;"><div class="item">
                         <img src="img/client/07.png" alt="" />
                     </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
-                    
-                    
-                    
-                    
-                    
-                    
                 </div>
 			</div>
         </div>
     </div>
-	
+
     <!-- ===== New On Blog/News Posts Section =======
     ============================================= -->
-    <div id="blog-post">
-	    <div class="container"> 
+    <div id="blog-post" class="relativect">
+	    <div class="container">
 		    <div class="row">
                 <div class="section-title text-center wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
                     <h1>New Blog Posts</h1>
@@ -964,8 +963,8 @@ Obtenir votre accès à l'outil</p>
                     </div>
                     <div class="clearfix"></div>
                 </div>
-			</div>	
-		</div> 
+			</div>
+		</div>
 
         <div class="row text-left blog-presentation">
             <div class="col-sm-4 col-md-4">
@@ -997,27 +996,27 @@ Obtenir votre accès à l'outil</p>
             </div>
         </div>
 	</div>
-	
+
     <!-- ======= Motivation Quote Section ========
     ========================================== -->
-    <div id="quote">
+    <div id="quote" class="relativect">
         <div class="overlay">
 	        <div class="container">
 	            <div class="row">
 				    <div class="col-md-12 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: hidden; animation-duration: 1000ms; animation-delay: 300ms; animation-name: none;">
 				        <div class="quote-text">
                             <h2>Small opportunities are often the beginning of great enterprises !</h2>
-				        </div>	
+				        </div>
 			        </div>
 				</div>
 			</div>
         </div>
-    </div>		
-	
+    </div>
+
 	<!-- =========== Footer Section =============
     ========================================== -->
 
-    <footer>
+    <footer class="relativect">
         <div id="contact">
 		    <div class="container">
                 <div class="row footer-widgets">
@@ -1031,8 +1030,8 @@ Obtenir votre accès à l'outil</p>
                                    <li><span class="fa fa-envelope"></span> someone@yoursite.com</li>
                                    <li><span class="fa fa-globe"></span> www.sitename.com</li>
                                 </ul>
-					        </div>	
-				        </div>	
+					        </div>
+				        </div>
 				        <div class="footer-widget social-widget">
                             <ul class="social-icons">
                                 <li>
@@ -1095,8 +1094,8 @@ Obtenir votre accès à l'outil</p>
             </div>
         </div>
     </footer>
-	
-	
+
+
 	<!-- ======== Portfolio Modal 1 =============
     ========================================== -->
     <div id="portfolioModal1" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1132,7 +1131,7 @@ Obtenir votre accès à l'outil</p>
         </div>
 	</div>
 
-	
+
 	<!-- ======== Portfolio Modal 2 =============
     ========================================== -->
     <div id="portfolioModal2" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1167,7 +1166,7 @@ Obtenir votre accès à l'outil</p>
             </div>
         </div>
 	</div>
-	
+
 	<!-- ======== Portfolio Modal 3 =============
     ========================================== -->
     <div id="portfolioModal3" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1202,10 +1201,10 @@ Obtenir votre accès à l'outil</p>
             </div>
         </div>
 	</div>
-	
+
 	<!-- ======== Portfolio Modal 4 =============
     ========================================== -->
-    <div id="portfolioModal4" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="portfolioModal4" class="portfolio-modal modal fade relativect" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -1237,10 +1236,10 @@ Obtenir votre accès à l'outil</p>
             </div>
         </div>
 	</div>
-	
+
 	<!-- ======== Portfolio Modal 5 =============
     ========================================== -->
-    <div id="portfolioModal5" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="portfolioModal5" class="portfolio-modal modal fade relativect" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -1272,10 +1271,10 @@ Obtenir votre accès à l'outil</p>
             </div>
         </div>
 	</div>
-	
+
 	<!-- ======== Portfolio Modal 6 =============
     ========================================== -->
-    <div id="portfolioModal6" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="portfolioModal6" class="portfolio-modal modal fade relativect" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -1307,9 +1306,9 @@ Obtenir votre accès à l'outil</p>
             </div>
         </div>
 	</div>
-	
 
-	
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
@@ -1319,23 +1318,94 @@ Obtenir votre accès à l'outil</p>
     <script type="text/javascript" src="js/wow.min.js"></script>
 	<script type="text/javascript" src="js/retina.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-	
+    <script src="https://d3js.org/d3-timer.v0.3.min.js"></script>
+    <script src="https://d3js.org/d3-ease.v0.7.min.js"></script>
+    <script src="js/isometric.js"></script>
+
     <script type="text/javascript"></script>
 	        <script>
             $('.timer').countTo();
               </script>
-	
-	
+
+
     <script src="js/wow.min.js"></script>
               <script>
               new WOW().init();
               </script>
-			  
-	<script src="js/smooth-scroll.js"></script>		  
+
+	<script src="js/smooth-scroll.js"></script>
 			  <script>
               smoothScroll.init();
               </script>
 
-  
+    <script>
+          var canvas = document.querySelector("canvas")
+          canvas.width = window.innerWidth
+
+          var context = canvas.getContext("2d"),
+              width = window.innerWidth,
+              height = canvas.height;
+
+          var isocontext = isometric(context);
+          isocontext.scale3d(30, 30, 30);
+
+          d3_timer.timer(function(elapsed) {
+            context.save();
+            context.clearRect(0, 0, width, height);
+            context.fillStyle = "#000";
+            context.translate(width / 2, height * 0.6);
+            for (var x = 20, d, t = (elapsed / 10500) % 1; x >= -20; --x) {
+              for (var y = 20; y >= -20; --y) {
+                if ((d = distanceManhattan(x, y)) > 20) continue;
+                var te = d3_ease.easeCubic(Math.max(0, Math.min(1, t * 3.3 - distanceCartesian(x, y) / 4)));
+                drawCube((d & 1 ? -1 : +1) * (Math.PI / 4 - te * Math.PI / 2), x * 2, y * 2, 2 * te);
+              }
+            }
+            context.restore();
+          });
+
+          function distanceCartesian(x, y) {
+            return Math.sqrt(x * x + y * y);
+          }
+
+          function distanceManhattan(x, y) {
+            return Math.abs(x) + Math.abs(y);
+          }
+
+          function drawCube(angle, x, y, z) {
+            if ((angle %= Math.PI / 2) < 0) angle += Math.PI / 2;
+            isocontext.save();
+            isocontext.translate3d(x, y, z);
+            isocontext.rotateZ(angle - Math.PI / 4);
+
+            context.beginPath();
+            isocontext.moveTo(+0.5, -0.5, +0.5);
+            isocontext.lineTo(+0.5, +0.5, +0.5);
+            isocontext.lineTo(-0.5, +0.5, +0.5);
+            isocontext.lineTo(-0.5, +0.5, -0.5);
+            isocontext.lineTo(-0.5, -0.5, -0.5);
+            isocontext.lineTo(+0.5, -0.5, -0.5);
+            isocontext.closePath();
+            context.fill();
+            context.lineWidth = 1.5;
+            context.strokeStyle = "#fff"
+            context.stroke();
+
+            context.beginPath();
+            isocontext.moveTo(-0.5, -0.5, +0.5);
+            isocontext.lineTo(+0.5, -0.5, +0.5);
+            isocontext.moveTo(-0.5, -0.5, +0.5);
+            isocontext.lineTo(-0.5, +0.5, +0.5);
+            isocontext.moveTo(-0.5, -0.5, +0.5);
+            isocontext.lineTo(-0.5, -0.5, -0.5);
+            context.lineWidth = 0.75;
+            context.stroke();
+
+            isocontext.restore();
+          }
+
+  </script>
+
+
 
 </body></html>
