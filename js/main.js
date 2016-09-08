@@ -93,23 +93,34 @@ function main() {
                 $(".why-us").slideUp(500)
                 $($(".why-us")[$(this).index()]).slideDown(500)
             })
-            wu.clone().insertAfter(wu)
+            var clone = wu.clone()
+            clone.insertAfter(wu).find('.icon-tab').each(function(index, m) {
+                var d = Math.ceil(Date.now() * Math.random())
+                clone.find($(m).attr('href')).attr('id', d)
+                $(m).attr('href', '#' + d)
+            })
             $(".why-us").slideUp(500)
         } else {
             $($(".why-us").get(i)).remove()
         }
 
         var ch = $(el).parent().children()
-        var row = Math.ceil(ch / 12)
-        var sp = ((12 * row) - ((duplicate ? ch.length : ch.length - 1) * 4)) / row
+        var row = Math.ceil((ch.length * 4) / 12)
+        var sp = (12 * row) - ((duplicate ? ch.length : ch.length - 1) * 4)
+        sp = sp / 2
 
-        for(var t=0; t<=row;t++) {
-            $(ch[t * 3]).removeClass(function(index, classs) {
-                var match = classs.match(/col-md-offset-\d+/)
-                return match ? match[0] : null
-            }).addClass('col-md-offset-' + sp)
-        }
+        ch.removeClass(function(index, classs) {
+            var match = classs.match(/col-md-offset-\d+/)
+            return match ? match[0] : null
+        })
+        $(ch[(row - 1) * 3]).addClass('col-md-offset-' + sp)
     }
+
+    window.octoboot_before_save = function(save) {
+       $("html").attr("class", "")
+       $(".why-us").slideUp(0)
+       save()
+   }
 
 }());
 
