@@ -1354,9 +1354,9 @@ Obtenir votre accès à l'outil</p>
             context.clearRect(0, 0, width, height);
             context.fillStyle = "#000";
             context.translate(width / 2, height * 0.6);
-            for (var x = 20, d, t = (elapsed / 10500) % 1; x >= -20; --x) {
-              for (var y = 20; y >= -20; --y) {
-                if ((d = distanceManhattan(x, y)) > 20) continue;
+            for (var x = 10, d, t = (elapsed / 10500) % 1; x >= -10; --x) {
+              for (var y = 10; y >= -10; --y) {
+                if ((d = distanceManhattan(x, y)) > 10) continue;
                 var te = d3_ease.easeCubic(Math.max(0, Math.min(1, t * 3.3 - distanceCartesian(x, y) / 4)));
                 drawCube((d & 1 ? -1 : +1) * (Math.PI / 4 - te * Math.PI / 2), x * 2, y * 2, 2 * te);
               }
