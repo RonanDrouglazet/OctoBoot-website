@@ -336,7 +336,7 @@ ul, ol{
 }
 #home .homeanim {
     background: black;
-    position: fixed;
+    position: absolute;
     top: 0;
     left:0;
     width:100%;
