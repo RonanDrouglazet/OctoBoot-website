@@ -121,7 +121,9 @@ function main() {
        $(".why-us").slideUp(0)
        // reset owl-carousel
        $('.owl-carousel').each(function(i, c) {
-           $(c).html($(c).find('item'))
+           var clone = $(c).find('.item').clone()
+           $(c).html('')
+           $(c).append(clone)
        })
        save()
    }
