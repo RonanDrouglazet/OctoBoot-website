@@ -84,7 +84,7 @@ function main() {
         $(".why-us").slideUp(500)
         $($(".why-us")[$(this).index()]).slideDown(500)
     })
-
+    // OCTOBOOT
     window.duplicate_mission = function(el, duplicate) {
         var i = $(el).index()
         if (duplicate) {
@@ -120,6 +120,75 @@ function main() {
        $("html").attr("class", "")
        $(".why-us").slideUp(0)
        save()
+   }
+
+   // ANIM INTRO
+   var canvas = document.querySelector("canvas")
+   canvas.width = window.innerWidth
+
+   var context = canvas.getContext("2d"),
+       width = window.innerWidth,
+       height = canvas.height;
+
+   var isocontext = isometric(context);
+   isocontext.scale3d(30, 30, 30);
+   var num = Math.ceil((window.innerWidth * 10) / 960)
+   var delay = Math.ceil((window.innerWidth * 3.3) / 960)
+
+   d3_timer.timer(function(elapsed) {
+     context.save();
+     context.clearRect(0, 0, width, height);
+     context.fillStyle = "#000";
+     context.translate(width / 2, height * 0.6);
+     for (var x = num, d, t = (elapsed / 5000) % 1; x >= -num; --x) {
+       for (var y = num; y >= -num; --y) {
+         if ((d = distanceManhattan(x, y)) > num) continue;
+         var te = d3_ease.easeCubic(Math.max(0, Math.min(1, t * delay - distanceCartesian(x, y) / 4)));
+         drawCube((d & 1 ? -1 : +1) * (Math.PI / 4 - te * Math.PI / 2), x * 2, y * 2, 2 * te);
+       }
+     }
+     context.restore();
+   });
+
+   function distanceCartesian(x, y) {
+     return Math.sqrt(x * x + y * y);
+   }
+
+   function distanceManhattan(x, y) {
+     return Math.abs(x) + Math.abs(y);
+   }
+
+   function drawCube(angle, x, y, z) {
+     if ((angle %= Math.PI / 2) < 0) angle += Math.PI / 2;
+
+     isocontext.save();
+     isocontext.translate3d(x, y, z);
+     isocontext.rotateZ(angle - Math.PI / 4);
+
+     context.beginPath();
+     isocontext.moveTo(+0.5, -0.5, +0.5);
+     isocontext.lineTo(+0.5, +0.5, +0.5);
+     isocontext.lineTo(-0.5, +0.5, +0.5);
+     isocontext.lineTo(-0.5, +0.5, -0.5);
+     isocontext.lineTo(-0.5, -0.5, -0.5);
+     isocontext.lineTo(+0.5, -0.5, -0.5);
+     isocontext.closePath();
+     context.fill();
+     context.lineWidth = 1.5;
+     context.strokeStyle = "#fff"
+     context.stroke();
+
+     context.beginPath();
+     isocontext.moveTo(-0.5, -0.5, +0.5);
+     isocontext.lineTo(+0.5, -0.5, +0.5);
+     isocontext.moveTo(-0.5, -0.5, +0.5);
+     isocontext.lineTo(-0.5, +0.5, +0.5);
+     isocontext.moveTo(-0.5, -0.5, +0.5);
+     isocontext.lineTo(-0.5, -0.5, -0.5);
+     context.lineWidth = 0.75;
+     context.stroke();
+
+     isocontext.restore();
    }
 
 }());
