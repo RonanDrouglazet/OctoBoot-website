@@ -28,19 +28,22 @@ function main() {
   	=============================================== */
 
   	$(document).ready(function(){
-	    $(".news").owlCarousel({
-		autoPlay: 6000,
-        navigation : false, // Show next and prev buttons
-		     navigationText: [
-               "<i class='fa fa-angle-left'></i>",
-               "<i class='fa fa-angle-right'></i>"
-            ],
-        slideSpeed : 300,
-        singleItem:true,
-		pagination: true,
-		paginationSpeed : 400,
-		stopOnHover: true
-        });
+        if (!$(".news .owl-wrapper-outer").length) {
+            $(".news").owlCarousel({
+    		autoPlay: 6000,
+            navigation : false, // Show next and prev buttons
+    		     navigationText: [
+                   "<i class='fa fa-angle-left'></i>",
+                   "<i class='fa fa-angle-right'></i>"
+                ],
+            slideSpeed : 300,
+            singleItem:true,
+    		pagination: true,
+    		paginationSpeed : 400,
+    		stopOnHover: true
+            });
+        }
+
 
 
       $(".testimonials").owlCarousel({
