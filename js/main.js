@@ -141,20 +141,22 @@ function main() {
    var num = Math.ceil((window.innerWidth * 10) / 960)
    var delay = Math.ceil((window.innerWidth * 3.3) / 960)
 
-   d3_timer.timer(function(elapsed) {
-     context.save();
-     context.clearRect(0, 0, width, height);
-     context.fillStyle = "#000";
-     context.translate(width / 2, height * 0.6);
-     for (var x = num, d, t = (elapsed / 5000) % 1; x >= -num; --x) {
-       for (var y = num; y >= -num; --y) {
-         if ((d = distanceManhattan(x, y)) > num) continue;
-         var te = d3_ease.easeCubic(Math.max(0, Math.min(1, t * delay - distanceCartesian(x, y) / 4)));
-         drawCube((d & 1 ? -1 : +1) * (Math.PI / 4 - te * Math.PI / 2), x * 2, y * 2, 2 * te);
-       }
-     }
-     context.restore();
-   });
+   if (window.top === window) {
+       d3_timer.timer(function(elapsed) {
+         context.save();
+         context.clearRect(0, 0, width, height);
+         context.fillStyle = "#000";
+         context.translate(width / 2, height * 0.6);
+         for (var x = num, d, t = (elapsed / 5000) % 1; x >= -num; --x) {
+           for (var y = num; y >= -num; --y) {
+             if ((d = distanceManhattan(x, y)) > num) continue;
+             var te = d3_ease.easeCubic(Math.max(0, Math.min(1, t * delay - distanceCartesian(x, y) / 4)));
+             drawCube((d & 1 ? -1 : +1) * (Math.PI / 4 - te * Math.PI / 2), x * 2, y * 2, 2 * te);
+           }
+         }
+         context.restore();
+       });
+   }
 
    function distanceCartesian(x, y) {
      return Math.sqrt(x * x + y * y);
